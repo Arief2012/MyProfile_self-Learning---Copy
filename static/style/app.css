@@ -1,0 +1,32 @@
+.body {
+  min-width: 2000px;
+}
+.navbar {
+  background: fixed;
+  background-color: #85a6ff;
+}
+.jumbotron {
+  background: linear-gradient(#85e3ff 0%, #97a2ff 40%, #6eb5ff);
+}
+#about {
+  background-color: #a2d9ff;
+}
+#project {
+  background: #85a6ff;
+}
+#contact {
+  background: #a2d9ff;
+}
+.profileImage {
+  width: 200px;
+}
+.btn {
+  background-color: #6eb5ff;
+}
+.footer {
+  background-color: #85a6ff;
+  font-size: large;
+}
+section {
+  padding-top: 100px;
+}

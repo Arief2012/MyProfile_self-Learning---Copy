@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Si Udin profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style/app.css') }}"
+    />
+  </head>
+  <body id="home">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">Profil Udin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Card welcome</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sosmed
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://instagram.com/r_arief__?igshid=ZDdkNTZiNTM="
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/rizki-arief/"
+                    >Linkid</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://github.com/Arief2012"
+                    >Github</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End Navbar-->
+    <!--Home-->
+    <section class="jumbotron text-center">
+      <img
+        class="rounded-circle profileImage img-thumbnail"
+        src="{{ url_for('static', filename='image/profileImage.jpg') }}"
+        alt="image Profile"
+      />
+      <h1 class="display-4">RIZKI ARIEF DEHANUDIN</h1>
+      <p class="lead">People | Manusia biasa</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a2d9ff"
+          fill-opacity="1"
+          d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,208C672,235,768,245,864,234.7C960,224,1056,192,1152,176C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--end Home-->
+
+    <!--About-->
+    <section id="about">
+      <div class="container text-center">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            Saya seorang mahasiswa Informatika di Universitas Amikom Purwokerto,
+            dan saya sangat tertarik dengan teknologi dan pemrograman. Sejak
+            kecil, saya sudah memiliki ketertarikan pada komputer dan
+            pengembangan software, dan kini saya menjalani passion saya melalui
+            pendidikan di jurusan Informatika.
+          </div>
+          <div class="col-md-4 mb-3">
+            Selama kuliah, saya banyak belajar tentang pemrograman, database,
+            jaringan komputer, keamanan informasi, dan teknologi terkini
+            lainnya. Saya juga mengambil Studi Independen di Power Academy untuk
+            meningkatkan kemampuan dan keterampilan saya dalam bidang teknologi
+            khususnya kecerdasan buatan atau AI.
+          </div>
+          <div class="col-md-4 mb-3">
+            Saya memiliki motivasi yang tinggi untuk terus belajar dan
+            mengembangkan diri dalam bidang teknologi. Saya ingin menjadi
+            seorang profesional di bidang teknologi yang dapat memberikan dampak
+            positif bagi masyarakat.
+          </div>
+          <div class="col mt-3">
+            <p class="text-center fw-bold">
+              Klik tombol di bawah ini untuk melihat CV saya:
+            </p>
+            <div class="text-center">
+              <a
+                href="https://drive.google.com/file/d/1xsFCx4BALd8dO9R8wLI7RZNsgN9Wisgg/view"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Lihat CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#85a6ff"
+          fill-opacity="1"
+          d="M0,224L34.3,197.3C68.6,171,137,117,206,122.7C274.3,128,343,192,411,218.7C480,245,549,235,617,213.3C685.7,192,754,160,823,165.3C891.4,171,960,213,1029,224C1097.1,235,1166,213,1234,192C1302.9,171,1371,149,1406,138.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--End About-->
+    <!--Projoct-->
+    <section id="project">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2>Portofolio</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="{{ url_for('static', filename='image/project_PMO.png') }}"
+                class="card-img-top"
+                alt="project_mobile"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Saya membuat sebuah aplikasi mobile dengan bahasa Java dan
+                  sofware android studio untuk membantu pengguna dalam mencatat
+                  kegiatan atau peristiwa dalam bentuk diary atau catatan
+                  harian. Aplikasi ini dilengkapi dengan fitur login, register,
+                  Tambah catatan, Update catatan, hapus catatan dan penggunaan
+                  Google Ads untuk memasang iklan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="{{ url_for('static', filename='image/project_3d.png') }}"
+                class="card-img-top"
+                alt="project_mobile"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Saya membuat sebuah proyek 3D isometric ruangan dengan teknik
+                  rendering isometrik menggunakan software Blender. Proyek ini
+                  melibatkan pembuatan model 3D, pengaturan pencahayaan, dan
+                  rendering untuk menghasilkan gambar realistis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="{{ url_for('static', filename='image/project_Pronet.png') }}"
+                class="card-img-top"
+                alt="project_mobile"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Saya membuat aplikasi inventory untuk Kecamatan Karang Lewas
+                  menggunakan teknologi .NET, aplikasi Visual Studio, dan
+                  database SQL Server. Aplikasi ini membantu pengelolaan
+                  inventaris barang dan aset dengan mudah. Aplikasi ini
+                  terintegrasi dengan database SQL Server dengan baik. Proyek
+                  ini menunjukkan kemampuan saya dalam pengembangan aplikasi
+                  desktop dengan teknologi .NET dan aplikasi Visual Studio serta
+                  penggunaan database SQL Server.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a2d9ff"
+          fill-opacity="1"
+          d="M0,192L60,181.3C120,171,240,149,360,160C480,171,600,213,720,197.3C840,181,960,107,1080,90.7C1200,75,1320,117,1380,138.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--End Project-->
+
+    <!--contact-->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!--email-->
+          <div class="col-md-6">
+            <h4 class="text-center">Email</h4>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+          <!--end email-->
+          <!--Whatsapp-->
+          <div class="col-md-6 text-center">
+            <h4 class="text-center mb-3">Whatsapp</h4>
+            <div class="col text-center mb-4">
+              <p>Scan Barcode di bawah untuk menghubungi melalui WhatsApp</p>
+              <a href="https://wa.me/+6287708264025" target="_blank">
+                <img
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/qr/EMRDAQADQYPWP1"
+                  alt="WhatsApp QR Code"
+                  class="img-fluid img-thumbnail"
+                />
+                <div class="col text-center mt-3">
+                  <button type="button" class="btn btn-primary">
+                    Chat on WhatsApp
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--Whatsapp-->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#85a6ff"
+          fill-opacity="1"
+          d="M0,192L60,181.3C120,171,240,149,360,160C480,171,600,213,720,197.3C840,181,960,107,1080,90.7C1200,75,1320,117,1380,138.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--End Contact-->
+
+    <!--Footeer-->
+    <footer class="footer text-center pb-3">
+      <p class="text-black">
+        Create by
+        <a
+          href="https://instagram.com/r_arief__?igshid=ZDdkNTZiNTM="
+          class="text-black fw-bold"
+          >Rizki Arief Dehanudin</a
+        >
+      </p>
+    </footer>
+    <!--End Footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
